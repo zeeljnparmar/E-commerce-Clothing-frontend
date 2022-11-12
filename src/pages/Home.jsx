@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 //components
 import HomeComponent from "../components/Home/HomeComponent";
 
 const Home = () => {
-  return (
-    <div>
-      <HomeComponent />
-    </div>
-  );
+  useEffect(() => {
+    document.title = "StyleOut | Home";
+  }, []);
+  return <HomeComponent />;
 };
 
 export default Home;
