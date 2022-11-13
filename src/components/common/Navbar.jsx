@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 //icons
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import LocalMallOutlinedIcon from "@mui/icons-material/LocalMallOutlined";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
   const [menHover, setMenHover] = useState(false);
@@ -11,11 +14,16 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-white min-h-[8rem] border-b border-b-black">
-        <div className="wrapper flex items-center justify-between pl-14 pr-14">
-          <div className="logo pt-5 pb-5 text-head-1 font-7 tracking-wider">
-            StyleOut
+        <div className="flex items-center justify-between pl-14 pr-14 900:flex-col">
+          <div className="text-head-4 hidden">
+            <MenuIcon fontSize="inherit" />
           </div>
-          <div className="text-gray-700 flex items-center gap-x-10 capitalize">
+          <Link to="/">
+            <div className="logo pt-5 pb-5 text-head-1 font-7 tracking-wider">
+              StyleOut
+            </div>
+          </Link>
+          <div className="text-gray-700 flex items-center gap-x-10 capitalize 900:flex-col">
             <div
               className="text-body-3"
               onClick={() => {
@@ -24,7 +32,7 @@ const Navbar = () => {
               }}
             >
               <p>
-                men{" "}
+                <Link to={{ pathname: "/clothing/men" }}>men </Link>
                 <KeyboardArrowDownOutlinedIcon
                   className={`${menHover ? "rotate-180" : ""}`}
                 />
@@ -56,7 +64,7 @@ const Navbar = () => {
               }}
             >
               <p>
-                women{" "}
+                <Link to={{ pathname: "/clothing/women" }}>women </Link>
                 <KeyboardArrowDownOutlinedIcon
                   className={`${womenHover ? "rotate-180" : ""}`}
                 />
@@ -82,7 +90,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="text-gray-700 flex items-center gap-x-10 capitalize">
-            <div className="flex justify-center items-center rounded-lg bg-gray-200 p-3">
+            <div className="flex justify-center items-center rounded-lg bg-gray-200 p-3 900:hidden">
               <SearchIcon
                 style={{ fontSize: "2.4rem" }}
                 className="text-gray-600 ml-3"
