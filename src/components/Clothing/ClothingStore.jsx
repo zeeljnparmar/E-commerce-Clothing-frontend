@@ -41,7 +41,7 @@ const ClothingStore = ({ type }) => {
 const ClothCard = ({ s }) => {
   return (
     <>
-      <div className="basis-[32%] 1150:basis-[49%] 450:!basis-full">
+      <div className="w-[33%] 1150:w-[49%] 450:!w-full">
         <Card data={s} />
       </div>
     </>

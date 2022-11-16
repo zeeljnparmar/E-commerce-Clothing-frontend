@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const LoginComponent = () => {
   const [login, setLogin] = useState({
@@ -46,6 +47,12 @@ const LoginComponent = () => {
               <button className="w-full bg-light-yellow text-black pt-2 pb-2  500:text-body-3">
                 SignIn
               </button>
+            </div>
+            <div className="mt-10 500:text-body-3">
+              Don&apos;t have a account{" "}
+              <span className="underline text-[blue]">
+                <Link to={{ pathname: "/signup" }}>Register Here</Link>
+              </span>
             </div>
           </div>
         </div>

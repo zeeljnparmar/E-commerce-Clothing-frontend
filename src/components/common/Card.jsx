@@ -12,7 +12,7 @@ const Card = ({ data }) => {
             src={data.image_url}
             alt="product"
             loading="lazy"
-            className="object-contain max-w-full max-h-full transition-all hover:scale-110 hover:origin-[50%_50%]"
+            className="object-contain max-w-full max-h-full h-full w-full transition-all hover:scale-110 hover:origin-[50%_50%]"
           />
         </div>
         <div className="flex justify-between items-start">
