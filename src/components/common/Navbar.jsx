@@ -102,7 +102,9 @@ const Navbar = () => {
                 placeholder="search by product"
               />
             </div>
-            <div className="text-body-3 font-6">Login</div>
+            <div className="text-body-3 font-6">
+              <Link to={{ pathname: "/signin" }}>Login</Link>
+            </div>
             <div>
               <FavoriteBorderIcon
                 style={{ fontSize: "2.4rem" }}

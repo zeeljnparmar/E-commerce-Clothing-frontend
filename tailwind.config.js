@@ -16,7 +16,7 @@ module.exports = {
         "body-2": "1.6rem", // 16px
         "body-3": "1.4rem", // 14px
         "body-4": "1.2rem", // 12px
-        "body-4": "1rem", // 10px
+        "body-5": "1rem", // 10px
       },
 
       fontWeight: {
@@ -35,6 +35,7 @@ module.exports = {
         yellow: "rgb(251, 209, 57)",
         "light-yellow": "#ffd84d",
         footer: "#181818",
+        "green-600": "rgb(22, 163, 74,0.6)",
       },
       screens: {
         1500: { max: "1500px" },

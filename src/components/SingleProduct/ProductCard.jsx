@@ -114,11 +114,11 @@ const ProductCard = ({ data }) => {
             <div className="mt-20 flex gap-x-10">
               <div className="bg-light-yellow pt-2 pb-2 basis-1/3 flex items-center justify-center gap-x-3 1000:basis-2/5">
                 <LocalMallOutlinedIcon style={{ fontSize: "2rem" }} />
-                <div className=" 1000:text-body-3">Add To Bag</div>
+                <div className="1000:text-body-3">Add To Bag</div>
               </div>
               <div className="border border-gray-400 text-gray-400 basis-1/3 pt-2 pb-2 flex items-center justify-center gap-x-3 1000:basis-2/5">
                 <FavoriteBorderIcon style={{ fontSize: "2rem" }} />
-                <div className=" 1000:text-body-3">Wishlist</div>
+                <div className="1000:text-body-3">Wishlist</div>
               </div>
             </div>
           </div>
