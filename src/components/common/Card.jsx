@@ -7,12 +7,12 @@ const Card = ({ data }) => {
   return (
     <>
       <div className="border border-transparent">
-        <div className="relative overflow-hidden w-full">
+        <div className="relative overflow-hidden w-full h-[35rem] 1150:h-[45rem] 450:!h-[55rem]">
           <img
             src={data.image_url}
             alt="product"
             loading="lazy"
-            className="object-contain max-w-full max-h-full h-full w-full transition-all hover:scale-110 hover:origin-[50%_50%]"
+            className="object-fill max-w-full max-h-full h-full w-full transition-all hover:scale-110 hover:origin-[50%_50%]"
           />
         </div>
         <div className="flex justify-between items-start">

@@ -162,7 +162,7 @@ const Image = ({ img_url, currentImage, setCurrentImage, index }) => {
 const ClothCard = ({ s }) => {
   return (
     <>
-      <div className="basis-[24%] 1150:basis-[48%] 500:!basis-full">
+      <div className="w-[24%] 1150:w-[48%] 500:!w-full">
         <Card data={s} />
       </div>
     </>

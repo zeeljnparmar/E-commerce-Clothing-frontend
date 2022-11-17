@@ -61,7 +61,7 @@ const Cart = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex flex-col red">
+            <div className="w-full flex flex-col">
               <Carousel
                 responsive={responsive}
                 autoPlay={false}

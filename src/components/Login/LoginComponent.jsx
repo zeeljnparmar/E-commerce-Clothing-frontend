@@ -49,7 +49,7 @@ const LoginComponent = () => {
               </button>
             </div>
             <div className="mt-10 500:text-body-3">
-              Don&apos;t have a account{" "}
+              Don&apos;t have a account?{" "}
               <span className="underline text-[blue]">
                 <Link to={{ pathname: "/signup" }}>Register Here</Link>
               </span>
